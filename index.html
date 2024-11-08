@@ -29,24 +29,28 @@
             class="logo"
           />
         </a>
-        <button
-          id="hamburger-menu"
-          data-toggle="ham-navigation"
-          class="hamburger-menu-button"
-        >
-          <span class="hamburger-menu-button-open">Menu</span>
-        </button>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          ><button
+            id="hamburger-menu"
+            data-toggle="ham-navigation"
+            class="hamburger-menu-button"
+          >
+            <span class="hamburger-menu-button-open">Menu</span>
+          </button>
+        </a>
       </span>
-      <!--      <nav id="ham-navigation" class="ham-menu">
-        <ul class="menu">
-          <li><a class="ham" href="#">Home</a></li>
-          <li class="active"><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav> -->
+
+      <div id="navi" class="overlay">
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <span onclick="openNav()"></span>
+      <span onclick="openNav()"></span>
     </header>
 
     <section>
@@ -58,38 +62,10 @@
         />
         <p class="text-greet greeting">The JETS</p>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br />
       </main>
     </section>
 
     <footer>
-      <!--       <section>
-        <ul id="no-bullets">
-          <li>
-            <a id="about" href="./pages/about.html" target="_blank">
-              About us
-            </a>
-          </li>
-          <li>
-            <a id="about" href="./pages/projects.html" target="_blank">
-              Projekts
-            </a>
-          </li>
-          <li>
-            <a id="about" href="./pages/sponsors.html" target="_blank">
-              Sponsors
-            </a>
-          </li>
-        </ul>
-      </section> -->
       <section class="footer-down">
         <section class="address">
           <ul class="contact">
@@ -104,6 +80,7 @@
             <li>Phone: +91 7022057597</li>
             <li>
               Address: <br />
+              REVA University <br />
               Rukmini Knowledge Park, <br />
               Kattigenahalli, Yelahanka, <br />
               Bangalore - 560 064 <br />
@@ -114,22 +91,22 @@
         <section class="social-container">
           <p>Follow us on</p>
           <ul class="social-list">
-            <li>
+            <li class="media">
               <a href="https://linkedin.com">
                 <img src="./assets/linkedin.svg" alt="linked in logo" />
               </a>
             </li>
-            <li>
+            <li class="media">
               <a href="https://youtube.com">
                 <img src="./assets/youtube.svg" alt="youtube logo" />
               </a>
             </li>
-            <li>
+            <li class="media">
               <a href="https://instagram.com">
                 <img src="./assets/instagram.svg" alt="instagram logo" />
               </a>
             </li>
-            <li>
+            <li class="media">
               <a href="https://github.com">
                 <img src="./assets/github.svg" alt="github logo" />
               </a>
@@ -142,6 +119,7 @@
     </footer>
 
     <!-- scripts -->
+    <script src="./scripts/overlay.js"></script>
     <script src="./scripts/hamburger.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
