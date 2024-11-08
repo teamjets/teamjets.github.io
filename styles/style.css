@@ -44,8 +44,9 @@ a {
 
 footer {
   font-weight: lighter;
-  padding: 50px;
-  background: #393939;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  background: #393939cd;
   border-radius: 25px;
   color: #ffffff;
 }
