@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--css and fonts-->
-    <link rel="stylesheet" href="./styles/hamburger.css" />
+    <link rel="stylesheet" href="./styles/overlay.css" />
+    <!-- <link rel="stylesheet" href="./styles/hamburger.css" /> -->
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" href="./assets/logo.png" type="png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,42 +30,50 @@
             class="logo"
           />
         </a>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          ><button
-            id="hamburger-menu"
-            data-toggle="ham-navigation"
-            class="hamburger-menu-button"
-          >
-            <span class="hamburger-menu-button-open">Menu</span>
-          </button>
-        </a>
+
+        <span
+          style="font-size: 30px; cursor: pointer"
+          class="hamburger-menu-button"
+          onclick="openNav()"
+          >&#9776;
+        </span>
+
+        <!-- 
+        This is the sesky button
+        <button
+          id="hamburger-menu"
+          data-toggle="ham-navigation"
+          class="hamburger-menu-button"
+        >
+          <span class="hamburger-menu-button-open">Menu</span>
+        </button> -->
       </span>
-
-      <div id="navi" class="overlay">
-        <div class="overlay-content">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-        </div>
-      </div>
-
-      <span onclick="openNav()"></span>
-      <span onclick="openNav()"></span>
     </header>
 
     <section>
-      <main>
-        <img
-          class="scrollable-bg-img greeting"
-          src="./assets/badge.png"
-          alt="The JETS badge"
-        />
-        <p class="text-greet greeting">The JETS</p>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      </main>
+      <!-- Closing overlay with menu -->
+      <div id="navi" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="./pages/about.html">About</a>
+          <a href="./pages/projects.html">Projects</a>
+          <a href="./pages/sponsors.html">Sponsors</a>
+          <a href="./pages/shop.html">Shop</a>
+        </div>
+      </div>
     </section>
 
+    <main>
+      <img
+        class="scrollable-bg-img greeting"
+        src="./assets/badge.png"
+        alt="The JETS badge"
+      />
+      <p class="text-greet greeting">The JETS</p>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </main>
     <footer>
       <section class="footer-down">
         <section class="address">
