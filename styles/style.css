@@ -46,6 +46,7 @@ footer {
   padding: 50px;
   background: #393939;
   border-radius: 25px;
+  color: #ffffff;
 }
 
 #no-bullets {
@@ -68,6 +69,11 @@ a#about:visited {
 }
 
 .address {
+  display: flex;
+  margin-right: 50%;
+}
+
+.contact {
   text-decoration: none;
   list-style-type: none;
 }
@@ -90,6 +96,17 @@ a#about:visited {
   margin-top: 25%;
 }
 
-footer {
-  color: #ffffff;
+.footer-down {
+  display: flex;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list {
+  justify-content: space-between;
+  border-spacing: 5px;
+  list-style-type: none;
 }
