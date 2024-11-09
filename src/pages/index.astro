@@ -1,0 +1,88 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import FeatureCard from '../components/FeatureCard.astro';
+
+const features = [
+  {
+    title: "Innovation",
+    description: "Pushing the boundaries of what's possible with cutting-edge technology.",
+    icon: "https://cdn-icons-png.flaticon.com/512/2920/2920349.png"
+  },
+  {
+    title: "Excellence",
+    description: "Delivering exceptional quality and reliability in every project.",
+    icon: "https://cdn-icons-png.flaticon.com/512/6941/6941697.png"
+  },
+  {
+    title: "Solutions",
+    description: "Creating customized solutions to meet your unique challenges.",
+    icon: "https://cdn-icons-png.flaticon.com/512/4727/4727496.png"
+  }
+];
+
+const stats = [
+  { number: "98%", label: "Client Satisfaction" },
+  { number: "500+", label: "Projects Completed" },
+  { number: "50+", label: "Countries Served" },
+  { number: "24/7", label: "Support Available" }
+];
+---
+
+<Layout title="Home">
+  <Hero />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {features.map(feature => (
+        <FeatureCard {...feature} />
+      ))}
+    </div>
+
+    <div class="mt-24">
+      <h2 class="text-3xl font-bold text-primary text-center mb-16">Why Choose JETS?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="glass-card overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop" 
+            alt="Team Collaboration" 
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-8">
+            <h3 class="text-xl font-bold mb-4 text-primary">Expert Team</h3>
+            <p class="text-gray-600">
+              Our team of experts brings years of experience and deep industry knowledge
+              to every project we undertake.
+            </p>
+          </div>
+        </div>
+        <div class="glass-card overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop" 
+            alt="Technology Innovation" 
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-8">
+            <h3 class="text-xl font-bold mb-4 text-primary">Cutting-edge Technology</h3>
+            <p class="text-gray-600">
+              We leverage the latest technologies to deliver innovative solutions that
+              keep you ahead of the competition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-24 glass-card p-12">
+      <h2 class="text-3xl font-bold text-primary text-center mb-12">Our Impact</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {stats.map(stat => (
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary mb-2">{stat.number}</div>
+            <div class="text-gray-600">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>

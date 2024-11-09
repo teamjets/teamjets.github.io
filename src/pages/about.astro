@@ -1,0 +1,92 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us">
+  <div class="relative mb-16">
+    <img 
+      src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
+      alt="Team Collaboration"
+      class="w-full h-[400px] object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80"></div>
+    <div class="absolute inset-0 flex items-center justify-center">
+      <h1 class="text-4xl font-bold text-white">About JETS</h1>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="glass-card p-12 mb-12">
+      <div class="prose max-w-none">
+        <p class="text-lg mb-6">
+          JETS is a leading technology company dedicated to delivering innovative solutions
+          that transform businesses and improve lives. Founded in 2010, we've grown from
+          a small startup to a global technology leader.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+          <img 
+            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop"
+            alt="Office Environment"
+            class="w-full h-64 object-cover rounded-[50px]"
+          />
+          <div>
+            <h2 class="text-2xl font-bold mb-4 text-primary">Our Mission</h2>
+            <p class="mb-6">
+              To provide cutting-edge technology solutions that empower businesses to achieve
+              their full potential while maintaining the highest standards of quality and innovation.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+          <div>
+            <h2 class="text-2xl font-bold mb-4 text-primary">Our Vision</h2>
+            <p class="mb-6">
+              To be the global leader in technological innovation, setting new standards for
+              excellence and driving positive change in the industry.
+            </p>
+          </div>
+          <img 
+            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
+            alt="Team Meeting"
+            class="w-full h-64 object-cover rounded-[50px]"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+      <div class="glass-card p-8">
+        <img 
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+          alt="Team Values"
+          class="w-full h-48 object-cover rounded-[50px] mb-6"
+        />
+        <h3 class="text-xl font-bold mb-4 text-primary">Our Values</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Innovation and Creativity</li>
+          <li>Excellence in Execution</li>
+          <li>Customer Focus</li>
+          <li>Integrity and Trust</li>
+          <li>Continuous Learning</li>
+        </ul>
+      </div>
+      <div class="glass-card p-8">
+        <img 
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop"
+          alt="Technology Expertise"
+          class="w-full h-48 object-cover rounded-[50px] mb-6"
+        />
+        <h3 class="text-xl font-bold mb-4 text-primary">Our Expertise</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Software Development</li>
+          <li>Cloud Solutions</li>
+          <li>AI and Machine Learning</li>
+          <li>IoT Technologies</li>
+          <li>Cybersecurity</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Layout>
