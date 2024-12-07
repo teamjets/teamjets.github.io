@@ -1,4 +1,6 @@
 body {
+  background-image: linear-gradient(#000000, #ffffff),
+    url("/assets/background.jpg");
   font-family: "Roboto Mono";
   font-weight: 500;
   font-style: normal;
