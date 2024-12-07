@@ -1,20 +1,28 @@
 body {
-  background-image: linear-gradient(#000000, #ffffff),
-    url("/assets/background.jpg");
   font-family: "Roboto Mono";
   font-weight: 500;
   font-style: normal;
-  background-color: #ffffff;
+  height: 100%;
+  color: #ffffff;
+  background: linear-gradient(#000000de, #ffffff80);
+}
+
+html {
+  background: url("../assets/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header {
   border-radius: 25px;
-  background: #00000050;
+  background: #ffffff69;
   backdrop-filter: blur(90px);
   position: fixed;
   width: 99%;
   height: 75px;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -107,6 +115,7 @@ a#about:visited {
 .social-container {
   display: flex;
   justify-content: space-between;
+  color: #fff;
 }
 
 .media {
