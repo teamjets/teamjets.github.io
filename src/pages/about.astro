@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const pageTitle = "About Me";
+
+const goals_completed = [
+  "Develop a Vector control for a rocket",
+  "Make an RC airplane",
+];
+
+const goals_todo = [
+  "Make a 1km apogee J class sounding rocket",
+  "Launch a 1km apogee J class sounding rocket",
+  "Launch a rocket with an aero-spike nozzle",
+  "Launch a multi-stage rocket",
+  "Make a custom PCB for a rocket",
+];
+---
+
+<Layout pageTitle={pageTitle}>
+  <ul>
+    {
+      goals_completed.map((goal_completed) => (
+        <li class="goal">
+          <>
+            <input
+              type="checkbox"
+              id="goal_completed"
+              name="goal_completed"
+              value="completed"
+              checked
+              disabled
+            />
+            <label for="task1">{goal_completed}</label>
+          </>
+        </li>
+      ))
+    }
+    {
+      goals_todo.map((goal_todo) => (
+        <li class="goal">
+          <>
+            <input
+              type="checkbox"
+              id="goal_todo"
+              name="goal_todo"
+              value="todo"
+              disabled
+            />
+            <label for="task1">{goal_todo}</label>
+          </>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

@@ -1,0 +1,12 @@
+---
+const { name, link, about, image = "", alt } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<h1>
+  <a href={link} target="_blank" rel="noopener noreferrer">{name}</a>
+</h1>
+<p>{about}</p>
+<img src={image.src} alt={alt} />
+
+<hr />

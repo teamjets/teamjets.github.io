@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /*Background Colors*/
+  --background: #f3f3f3;
+  /* --background-2: #ffffff; */
+  --background-dark: #202631;
+  /* --background-dark-2: #202631; */
+
+  /*Text and link Colors*/
+  --text-color: #1e232f;
+  --text-color-dark: #bbbec6;
+  --link-light-color: #3e3a69;
+  --link-dark-color: #bbbec6;
+
+  /*Header Color*/
+  --header-light-bg: #00000010;
+  --header-dark-bg: #ffffff10;
+  --hover-light: #93939382;
+  --hover-dark: #00000082;
+  --no-hover-light: #ffffff50;
+  --no-hover-dark: #00000050;
+
+  /*Footer Color*/
+  --footer-light-bg: #1e232f;
+  --footer-dark-bg: #93979e;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+html {
+  /* Font styling */
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--text-color);
+
+  background-color: var(--background);
+  /* background-image: linear-gradient(
+    to bottom right,
+    var(--background),
+    var(--background-2)
+  ); */
+}
+
+body {
+  padding: 25px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  border-radius: 50px;
+  position: sticky;
+  top: 2%;
+  width: auto;
+  margin: auto;
+}
+
+.logo {
+  backdrop-filter: saturate(200%) blur(20px);
+  background-color: var(--header-light-bg);
+  /* display: flex; */
+  /* text-align: left; */
+  border-radius: 100px;
+  padding: 10px;
+  margin: auto;
+}
+
+.main-logo {
+  opacity: 0.6;
+}
+
+.footer {
+  background-color: var(--footer-light-bg);
+  color: var(--text-color-dark);
+  margin: auto;
+  margin-bottom: 1%;
+  padding: 5px;
+  position: relative;
+  height: 50%;
+  width: 95%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.social-icons {
+  filter: invert(1);
+  max-height: 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.social-links {
+  text-decoration: none;
+  color: var(--link-dark-color);
+}
+
+/* Dark mode colors  */
+html.dark {
+  color: var(--text-color-dark);
+  background-color: var(--background-dark);
+
+  /* background-image: linear-gradient(
+    to bottom right,
+    var(--background-dark-2),
+    var(--background-dark)
+  ); */
+}
+
+.dark .footer {
+  background-color: var(--footer-dark-bg);
+  color: var(--text-color);
+}
+
+.dark .logo {
+  background-color: var(--header-dark-bg);
+}
+
+/* .dark .main-logo {
+  filter: invert(1);
+} */
+
+.dark .social-icons {
+  filter: invert(0);
+}
+
+.dark .social-links {
+  color: var(--link-light-color);
+}

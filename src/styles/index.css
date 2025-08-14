@@ -1,0 +1,57 @@
+.welcome {
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  width: 90%;
+  height: 100%;
+  color: var(--text-color-dark);
+  border-radius: 25px;
+  display: block;
+
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  margin: 25px auto;
+  padding: 10px;
+}
+
+.welcome-heading {
+  font-size: 35px;
+}
+
+.jets-badge {
+  height: auto;
+  width: 250px;
+  padding: 10px;
+  padding-inline: auto;
+  margin: 50px auto;
+}
+.content {
+  text-align: justify;
+}
+
+@media screen and (min-width: 1060px) {
+  .welcome {
+    display: flex;
+    columns: 2;
+    align-items: center;
+    border-radius: 100px;
+    text-align: center;
+    align-content: center;
+    width: auto;
+    height: 100%;
+    margin: 50px 50px;
+  }
+  .welcome-heading {
+    font-size: 50px;
+    width: 60%;
+
+    word-wrap: break-word;
+    text-align: center;
+  }
+  .jets-badge {
+    height: auto;
+    width: 500px;
+    padding-inline: auto;
+    margin: 25px auto;
+  }
+}

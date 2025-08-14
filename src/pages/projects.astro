@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectsLink from "../components/ProjectsLink.astro";
+const pageTitle = "Our Projects";
+---
+
+<Layout pageTitle={pageTitle}>
+  <body>
+    <h1>{pageTitle}</h1>
+    <ProjectsLink
+      name="Rocket"
+      link="/projects/rocket"
+      about="lorem ipsum illum illo"
+      img="../assets/astro.svg"
+      alt="an image"
+    />
+
+    <ProjectsLink
+      name="Drone"
+      link="/projects/rocket"
+      about="lorem ipsum illum illo"
+      img="../assets/astro.svg"
+      alt="an image"
+    />
+
+    <ProjectsLink
+      name="Soccer Bot"
+      link="/projects/rocket"
+      about="lorem ipsum illum illo"
+      img="../assets/astro.svg"
+      alt="an image"
+    />
+
+    <ProjectsLink
+      name="More"
+      link="/projects/rocket"
+      about="lorem ipsum illum illo"
+      img="../assets/astro.svg"
+      alt="an image"
+    />
+  </body>
+</Layout>

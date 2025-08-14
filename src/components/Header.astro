@@ -1,0 +1,28 @@
+---
+import Navigation from "./Navigation.astro";
+
+import ThemeIcon from "./ThemeIcon.astro";
+
+import { Image } from "astro:assets";
+import mainBadge from "../assets/badge.png";
+---
+
+<span class="logo">
+  <a href="/" class="main-logo" aria-label="Main logo of the website">
+    <Image
+      src={mainBadge}
+      alt="Site logo"
+      height="80px"
+      width="auto"
+      padding="25px"
+    />
+  </a>
+</span>
+
+<span class="navigation">
+  <Navigation />
+</span>
+
+<span class="theme-icon">
+  <ThemeIcon />
+</span>

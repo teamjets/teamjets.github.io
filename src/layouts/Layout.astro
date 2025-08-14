@@ -1,0 +1,37 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+const { pageTitle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="This a a website that has everything about Team JETS"
+    />
+    <meta />
+    <!-- <link rel="icon" type="image/png" href="/logo.png" /> -->
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <Header />
+    </div>
+    <slot />
+    <div class="footer">
+      <Footer />
+    </div>
+
+    <script>
+      import "../scripts/menu.js";
+    </script>
+  </body>
+</html>

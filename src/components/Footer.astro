@@ -1,0 +1,52 @@
+---
+import Social from "./Social.astro";
+
+// Icons
+import youtubeLogo from "/public/assets/social/youtube.svg";
+import githubLogo from "/public/assets/social/github.svg";
+import linkedinLogo from "/public/assets/social/linkedin.svg";
+import instagramLogo from "/public/assets/social/instagram.svg";
+
+// CSS files
+import "../styles/footer.css";
+---
+
+<p class="copyright-text">
+  &copy; Designed and developed by
+  <a
+    href="http://deltakiro.github.io/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="color: beige;"
+  >
+    deltakiro
+  </a>. This site is built using Astro.
+</p>
+
+<Social
+  icon={linkedinLogo}
+  website="https://linkedin.com/in"
+  username="dvke5"
+  platform="LinkedIn"
+/>
+
+<Social
+  icon={githubLogo}
+  website="https://github.com"
+  username="the- jets-13a508337"
+  platform="LinkedIn"
+/>
+
+<Social
+  icon={instagramLogo}
+  website="https://instagram.com"
+  username="teamjets.24"
+  platform="Instagram"
+/>
+
+<Social
+  icon={youtubeLogo}
+  website="https://youtube.com/"
+  username="@thejets-24"
+  platform="YouTube"
+/>
