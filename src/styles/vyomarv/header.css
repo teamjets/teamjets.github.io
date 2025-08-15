@@ -10,6 +10,8 @@
   border-radius: 100px;
   padding: 10px;
   margin: auto;
+  width: 90px;
+  height: 90px;
 }
 
 .navigation {
@@ -23,9 +25,10 @@
 
 .main-logo {
   filter: invert(0);
-}
-.dark .main-logo {
-  filter: invert(1);
+  height: 90px;
+  width: auto;
+  opacity: 0.8;
+  margin: auto;
 }
 
 .links {
@@ -107,6 +110,10 @@
 
 .dark .navigation {
   background-color: var(--header-dark-bg);
+}
+
+.dark .main-logo {
+  filter: invert(1);
 }
 
 .dark .theme-icon {

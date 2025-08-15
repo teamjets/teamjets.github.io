@@ -3,19 +3,13 @@ import Navigation from "../Navigation.astro";
 
 import ThemeIcon from "../ThemeIcon.astro";
 
-import { Image } from "astro:assets";
-import mainBadge from "../../assets/vyomarv-logo.png";
+// Images / Icons
+import Logo from "../../assets/vyomarv/logo.svg";
 ---
 
 <span class="logo">
-  <a href="/" class="main-logo" aria-label="Main logo of the website">
-    <Image
-      src={mainBadge}
-      alt="Site logo"
-      height="80px"
-      width="auto"
-      padding="25px"
-    />
+  <a href="/" aria-label="Main logo of the website">
+    <Logo class="main-logo" />
   </a>
 </span>
 

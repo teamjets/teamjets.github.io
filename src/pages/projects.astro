@@ -1,17 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ProjectsLink from "../components/ProjectsLink.astro";
-const pageTitle = "Our Projects";
+
+import "../styles/projects.css";
+const pageTitle = "Our Projects and Participated Contests";
 ---
 
 <Layout pageTitle={pageTitle}>
   <body>
-    <h1>{pageTitle}</h1>
-    <ProjectsLink
+    <h1>Our Projects</h1>
+
+    <p>SOON (TM)</p>
+    <!-- <ProjectsLink
       name="Rocket"
       link="/projects/rocket"
       about="lorem ipsum illum illo"
-      img="../assets/astro.svg"
+      img=""
       alt="an image"
     />
 
@@ -32,10 +36,43 @@ const pageTitle = "Our Projects";
     />
 
     <ProjectsLink
-      name="More"
+      name="R-Create Exhibition"
       link="/projects/rocket"
       about="lorem ipsum illum illo"
       img="../assets/astro.svg"
+      alt="an image"
+    /> -->
+
+    <!-- Participated Contests and Exhibitions -->
+
+    <hr />
+    <h1>Participated Contests and Exhibitions</h1>
+
+    <ProjectsLink
+      name="R-Create Exhibition"
+      month="June"
+      year="2025"
+      link="/projects/competitions-exhibitions/rcreate-2025"
+      about="lorem ipsum illum illo"
+      image_path="../assets/competitions-exhibitions/r-create/rcreate.png"
+      alt="an image"
+    />
+
+    <ProjectsLink
+      name="Sky Thrust"
+      date="0"
+      link="/projects/competitions-exhibitions/skythrust"
+      about="lorem ipsum illum illo"
+      image_path="../assets/competitions-exhibitions/sky-thrust/sky-thrust.jpg"
+      alt="an image"
+    />
+
+    <ProjectsLink
+      name="REVA Genesis"
+      date="0"
+      link="/projects/competitions-exhibitions/rgenesis-2025"
+      about="lorem ipsum illum illo"
+      image_path="../assets/competitions-exhibitions/rgenesis.jpg"
       alt="an image"
     />
   </body>

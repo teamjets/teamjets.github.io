@@ -1,12 +1,56 @@
 ---
-const { name, link, about, image = "", alt } = Astro.props;
 import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+const {
+  name,
+  date = "1",
+  month,
+  year,
+  link,
+  about,
+  image_path = "",
+  alt,
+} = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/**/*.{jpg,jpeg,png,gif}"
+);
+
+const filename = image_path.split("/").pop();
+
+let selectedImage;
+for (const path in images) {
+  if (path.endsWith(filename)) {
+    const module = await images[path]();
+    selectedImage = module.default;
+    break;
+  }
+}
 ---
 
 <h1>
   <a href={link} target="_blank" rel="noopener noreferrer">{name}</a>
 </h1>
-<p>{about}</p>
-<img src={image.src} alt={alt} />
 
+{
+  date == "1" ? (
+    <p>
+      Event held on:{" "}
+      <strong>
+        {month} {year}
+      </strong>
+    </p>
+  ) : null
+}
+
+<p>{about}</p>
+
+{
+  selectedImage ? (
+    <Image src={selectedImage} alt={alt} class="competition-project-images" />
+  ) : (
+    <p>Image not found: {image_path}</p>
+  )
+}
 <hr />

@@ -50,33 +50,10 @@ body {
   margin: auto;
 }
 
-.main-logo {
-  opacity: 0.6;
-}
-
-.footer {
-  background-color: var(--footer-light-bg);
-  color: var(--text-color-dark);
-  margin: auto;
-  margin-bottom: 1%;
-  padding: 5px;
-  position: relative;
-  height: 50%;
-  width: 95%;
-  text-align: center;
-  border-radius: 20px;
-}
-
-.social-icons {
-  filter: invert(1);
-  max-height: 18px;
-  align-items: center;
-  text-align: center;
-}
-
-.social-links {
-  text-decoration: none;
-  color: var(--link-dark-color);
+.competition-project-images {
+  height: 200px;
+  width: auto;
+  border-radius: 25px;
 }
 
 /* Dark mode colors  */
@@ -89,21 +66,4 @@ html.dark {
     var(--background-dark-2),
     var(--background-dark)
   ); */
-}
-
-.dark .footer {
-  background-color: var(--footer-dark-bg);
-  color: var(--text-color);
-}
-
-.dark .logo {
-  background-color: var(--header-dark-bg);
-}
-
-.dark .social-icons {
-  filter: invert(0);
-}
-
-.dark .social-links {
-  color: var(--link-light-color);
 }
