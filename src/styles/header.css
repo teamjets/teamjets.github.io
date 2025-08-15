@@ -34,7 +34,7 @@
   width: auto;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .links a {
@@ -93,7 +93,7 @@
   margin: 5px auto;
   background-color: var(--text-color);
   border-radius: 50px;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .change .line1 {
