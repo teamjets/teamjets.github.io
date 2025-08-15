@@ -12,6 +12,7 @@ const {
   about,
   image_path = "",
   alt,
+  hr = "1",
 } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -55,4 +56,4 @@ for (const path in images) {
     <p>Image not found: {image_path}</p>
   )
 }
-<hr />
+{hr == "0" ? <br /> <br /> <br /> <br />  : <hr />}
