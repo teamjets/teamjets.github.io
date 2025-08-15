@@ -1,0 +1,15 @@
+---
+import Layout from "./Layout.astro";
+import "../styles/markdown.css";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout pageTitle={frontmatter.title}>
+  <div class="markdown-content">
+    <p>Published on: {frontmatter.pubDate.toString().slice(0, 10)}</p>
+    <p><em>{frontmatter.description}</em></p>
+    <p>Written by {frontmatter.author}</p>
+    <slot />
+  </div>
+</Layout>
