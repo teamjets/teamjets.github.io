@@ -1,19 +1,38 @@
+.header {
+  display: flex;
+  position: sticky;
+  top: 2%;
+}
+
+.logo {
+  backdrop-filter: blur(20px);
+  background-color: var(--header-light-bg);
+  border-radius: 100px;
+  padding: 10px;
+  margin: auto;
+}
+
 .navigation {
-  backdrop-filter: saturate(200%) blur(20px);
+  backdrop-filter: blur(20px);
   background-color: var(--header-light-bg);
   padding: 25px;
+  margin: 25px;
   font-size: 20px;
-  margin: auto 10px;
   border-radius: 50px;
-  width: auto;
+}
+
+.main-logo {
+  filter: invert(0);
+}
+.dark .main-logo {
+  filter: invert(1);
 }
 
 .links {
   width: auto;
-  margin: auto;
+  transition: max-height 1s ease-in-out;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-in-out;
 }
 
 .links a {
@@ -21,17 +40,16 @@
   justify-content: center;
   color: var(--link-light-color);
   background-color: var(--no-hover-light);
-  backdrop-filter: saturate(200%) blur(20px);
   margin: 10px;
-  padding: 15px;
+  padding: 10px 15px;
   border-radius: 25px;
   text-decoration: none;
+  position: relative;
 }
 
 .links a:hover,
 .links a:focus {
   background-color: var(--hover-light);
-  backdrop-filter: blur(5px);
 }
 
 @media screen and (min-width: 1060px) {
@@ -42,16 +60,7 @@
 
   .links a {
     display: inline;
-    justify-content: space-evenly;
     margin: auto;
-    padding: 10px 15px;
-    border-radius: 25px;
-  }
-
-  .links a:hover,
-  .links a:focus {
-    background-color: var(--hover-light);
-    backdrop-filter: blur(5px);
   }
 
   .hamburger {
@@ -59,9 +68,20 @@
   }
 }
 
+.theme-icon {
+  backdrop-filter: blur(20px);
+  background-color: var(--header-light-bg);
+  display: flex;
+  border-radius: 100px;
+  padding: 10px;
+  margin: auto;
+}
+
+/* Hamburger style */
+
 .hamburger {
   cursor: pointer;
-  margin: auto;
+  margin: 10px auto;
 }
 
 .line {
@@ -71,16 +91,7 @@
   margin: 5px auto;
   background-color: var(--text-color);
   border-radius: 50px;
-  transition: all 0.4s ease-in-out;
-}
-
-.theme-icon {
-  backdrop-filter: saturate(200%) blur(20px);
-  background-color: var(--header-light-bg);
-  display: flex;
-  border-radius: 100px;
-  padding: 10px;
-  margin: auto;
+  transition: all 1s ease-in-out;
 }
 
 /* Dark Mode starts*/
@@ -124,4 +135,8 @@
 
 .change .line3 {
   transform: translate(0, -7px) rotate(-15deg);
+}
+
+.dark .logo {
+  background-color: var(--header-dark-bg);
 }

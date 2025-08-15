@@ -1,0 +1,131 @@
+.header {
+  display: flex;
+  position: sticky;
+  top: 2%;
+}
+
+.logo {
+  backdrop-filter: blur(20px);
+  background-color: var(--header-light-bg);
+  border-radius: 100px;
+  padding: 10px;
+  margin: auto;
+}
+
+.navigation {
+  backdrop-filter: blur(20px);
+  background-color: var(--header-light-bg);
+  padding: 25px;
+  margin: 25px;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+.links {
+  width: auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.links a {
+  display: flex;
+  justify-content: center;
+  color: var(--link-light-color);
+  background-color: var(--no-hover-light);
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  position: relative;
+}
+
+.links a:hover,
+.links a:focus {
+  background-color: var(--hover-light);
+}
+
+@media screen and (min-width: 1060px) {
+  .links {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .links a {
+    display: inline;
+    margin: auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+.theme-icon {
+  backdrop-filter: blur(20px);
+  background-color: var(--header-light-bg);
+  display: flex;
+  border-radius: 100px;
+  padding: 10px;
+  margin: auto;
+}
+
+/* Hamburger style */
+
+.hamburger {
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.line {
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: var(--text-color);
+  border-radius: 50px;
+  transition: all 1s ease-in-out;
+}
+
+.change .line1 {
+  transform: translate(0, 7px) rotate(15deg);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: translate(0, -7px) rotate(-15deg);
+}
+
+/* Dark Mode starts*/
+
+.dark .hamburger .line {
+  background-color: var(--text-color-dark);
+}
+
+.dark .links a {
+  color: var(--link-dark-color);
+  background-color: var(--no-hover-dark);
+}
+
+.dark .navigation {
+  background-color: var(--header-dark-bg);
+}
+
+.dark .links a:hover,
+.links a:focus {
+  background-color: var(--hover-dark);
+}
+
+@media screen and (min-width: 1060px) {
+  .dark .links a:hover,
+  .links a:focus {
+    background-color: var(--hover-dark);
+  }
+}
+
+.dark .theme-icon {
+  background-color: var(--header-dark-bg);
+}

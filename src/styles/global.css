@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./header.css";
+@import "./footer.css";
 
 :root {
   /*Background Colors*/
@@ -34,7 +36,6 @@ html {
 }
 
 html {
-  /* Font styling */
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -42,34 +43,10 @@ html {
   color: var(--text-color);
 
   background-color: var(--background);
-  /* background-image: linear-gradient(
-    to bottom right,
-    var(--background),
-    var(--background-2)
-  ); */
 }
 
 body {
   padding: 25px;
-  margin: auto;
-}
-
-.header {
-  display: flex;
-  border-radius: 50px;
-  position: sticky;
-  top: 2%;
-  width: auto;
-  margin: auto;
-}
-
-.logo {
-  backdrop-filter: saturate(200%) blur(20px);
-  background-color: var(--header-light-bg);
-  /* display: flex; */
-  /* text-align: left; */
-  border-radius: 100px;
-  padding: 10px;
   margin: auto;
 }
 
@@ -122,10 +99,6 @@ html.dark {
 .dark .logo {
   background-color: var(--header-dark-bg);
 }
-
-/* .dark .main-logo {
-  filter: invert(1);
-} */
 
 .dark .social-icons {
   filter: invert(0);
