@@ -3,13 +3,13 @@ import Navigation from "./Navigation.astro";
 
 import ThemeIcon from "./ThemeIcon.astro";
 
-import { Image } from "astro:assets";
-import mainBadge from "../assets/badge.png";
+// import { Image } from "astro:assets";
+import Logo from "../assets/logo.svg";
 ---
 
 <span class="logo">
   <a href="/" aria-label="Main logo of the website">
-    <Image class="main-logo" src={mainBadge} alt="Site logo" />
+    <Logo class="main-logo" />
   </a>
 </span>
 

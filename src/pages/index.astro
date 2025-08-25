@@ -1,8 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/index.css";
-import { Image } from "astro:assets";
-import jetsLogo from "../assets/badge.png";
+// import { Image } from "astro:assets";
+import GlassLogo from "../assets/glass-logo.svg";
 
 const pageTitle = "Home";
 ---
@@ -10,8 +10,8 @@ const pageTitle = "Home";
 <Layout pageTitle={pageTitle}>
   <body>
     <div class="welcome">
-      <h1 class="welcome-heading">Hey this is team JETS</h1>
-      <Image src={jetsLogo} alt="jets badge" class="jets-badge" />
+      <h1 class="welcome-heading">Hey, this is team JETS</h1>
+      <GlassLogo class="jets-badge" />
     </div>
     <div class="content">
       <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
