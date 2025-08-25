@@ -3,9 +3,10 @@ import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 
 const {
-  link,
   name,
-  date = "1",
+  link,
+  date = "",
+  day,
   month,
   year,
   position = "",
@@ -36,15 +37,16 @@ for (const path in images) {
 </h2>
 
 {
-  date == "1" ? (
+  date == "" ? (
     <p>
       Event held on:{" "}
-      <strong>
-        {month} {year}
+      <strong> 
+        {day} {month} {year}
       </strong>
     </p>
   ) : null
 }
+
 {position == "" ? <p /> : <p>Position: {position}</p>}
 
 <p>{about}</p>
