@@ -7,20 +7,38 @@
   position: relative;
   height: 50%;
   width: 95%;
-  text-align: center;
+  justify-content: center;
   border-radius: 20px;
+}
+
+.copyright-line {
+  display: flex;
+  justify-content: center;
 }
 
 .social-icons {
   filter: invert(1);
   max-height: 18px;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .social-links {
   text-decoration: none;
   color: var(--link-dark-color);
+}
+
+.get-in-touch {
+  list-style-type: none;
+}
+
+.contact-links {
+  display: flex;
+  columns: 2;
+  column-gap: 100px;
+  margin: auto;
+  padding: 50px;
+  justify-content: center;
 }
 
 /*Dark theme from here*/

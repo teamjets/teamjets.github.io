@@ -2,9 +2,9 @@
 const { icon, website, username = "", platform } = Astro.props;
 ---
 
-<span>
+<div>
   <img class="social-icons" src={`${icon.src}`} alt={`${website} icon`} />
   <a class="social-links" href={`${website}/${username}`} target="_blank">
     {platform}&nbsp;&nbsp;
   </a>
-</span>
+</div>

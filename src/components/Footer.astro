@@ -8,8 +8,8 @@ import linkedinLogo from "/public/assets/social/linkedin.svg";
 import instagramLogo from "/public/assets/social/instagram.svg";
 ---
 
-<p class="copyright-text">
-  &copy; Designed and developed by
+<p class="copyright-line">
+  &copy; Designed and developed by &nbsp
   <a
     href="http://deltakiro.github.io/"
     target="_blank"
@@ -20,30 +20,42 @@ import instagramLogo from "/public/assets/social/instagram.svg";
   </a>. This site is built using Astro.
 </p>
 
-<Social
-  icon={linkedinLogo}
-  website="https://linkedin.com/in"
-  username="dvke5"
-  platform="LinkedIn"
-/>
+<div class="contact-links">
+  <div>
+    <Social
+      icon={linkedinLogo}
+      website="https://linkedin.com/in"
+      username="the-jets-13a508337"
+      platform="LinkedIn"
+    />
 
-<Social
-  icon={githubLogo}
-  website="https://github.com"
-  username="the- jets-13a508337"
-  platform="LinkedIn"
-/>
+    <Social
+      icon={githubLogo}
+      website="https://github.com"
+      username="the- jets-13a508337"
+      platform="LinkedIn"
+    />
 
-<Social
-  icon={instagramLogo}
-  website="https://instagram.com"
-  username="teamjets.24"
-  platform="Instagram"
-/>
+    <Social
+      icon={instagramLogo}
+      website="https://instagram.com"
+      username="teamjets.24"
+      platform="Instagram"
+    />
 
-<Social
-  icon={youtubeLogo}
-  website="https://youtube.com/"
-  username="@thejets-24"
-  platform="YouTube"
-/>
+    <Social
+      icon={youtubeLogo}
+      website="https://youtube.com/"
+      username="@thejets-24"
+      platform="YouTube"
+    />
+  </div>
+
+  <div>
+    <ul class="get-in-touch">
+      <li>Mail: <a href="mailto:teamjetsgmail.com">teamjets@gmail.com</a></li>
+      <li>Phone: <a href="tel:+917022057597">+91 70220 57597</a></li>
+      <li>Address: Earth for now</li>
+    </ul>
+  </div>
+</div>
