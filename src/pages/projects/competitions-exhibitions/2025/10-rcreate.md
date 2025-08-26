@@ -19,12 +19,6 @@ We won second place
 <details>
 <summary>Media</summary>
 
-![Team JETS members receiving certificate for prize](../../../../assets/competitions-exhibitions/r-create/rcreate.png)
-
-![Watashi presenting](../../../../assets/competitions-exhibitions/r-create/rcreate-2.jpg)
-
-![Projects presented](../../../../assets/competitions-exhibitions/r-create/projects.jpg)
-
 </details>
 
 <br />
