@@ -5,15 +5,14 @@
   margin-bottom: 1%;
   padding: 5px;
   position: relative;
-  height: 50%;
-  width: 95%;
+  border-radius: 10px;
+  height: 25%;
   justify-content: center;
-  border-radius: 20px;
 }
 
 .copyright-line {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  word-wrap: break-word;
 }
 
 .social-icons {
@@ -35,10 +34,15 @@
 .contact-links {
   display: flex;
   columns: 2;
-  column-gap: 100px;
   margin: auto;
   padding: 50px;
   justify-content: center;
+}
+
+@media screen and (min-width: 1060px) {
+  .contact-links {
+    column-gap: 100px;
+  }
 }
 
 /*Dark theme from here*/

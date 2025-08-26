@@ -1,32 +1,36 @@
 .header {
+  backdrop-filter: blur(20px);
+  background-color: var(--header-light-bg);
+  border-radius: 50px;
+  width: 95%;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
   position: sticky;
   top: 2%;
 }
 
 .logo {
-  backdrop-filter: blur(20px);
-  background-color: var(--header-light-bg);
   border-radius: 100px;
-  padding: 10px;
   margin: auto;
-  width: 90px;
-  height: 90px;
 }
 
 .main-logo {
-  height: 90px;
+  height: 50px;
   width: auto;
-  opacity: 0.5;
-  /* padding: auto; */
+  padding: 10px;
   margin: auto;
 }
 
 .navigation {
-  backdrop-filter: blur(20px);
-  background-color: var(--header-light-bg);
+  /* backdrop-filter: blur(20px);
+  background-color: var(--header-light-bg); */
   padding: 25px;
-  margin: 25px;
+  /* margin: 25px; */
   font-size: 20px;
   border-radius: 50px;
 }
@@ -72,11 +76,11 @@
 }
 
 .theme-icon {
-  backdrop-filter: blur(20px);
-  background-color: var(--header-light-bg);
-  display: flex;
-  border-radius: 100px;
-  padding: 10px;
+  /* backdrop-filter: blur(20px);
+  background-color: var(--header-light-bg); */
+  /* display: flex; */
+  /* border-radius: 100px; */
+  /* padding: 10px; */
   margin: auto;
 }
 
@@ -84,7 +88,7 @@
 
 .hamburger {
   cursor: pointer;
-  margin: 10px auto;
+  /* margin: 10px auto; */
 }
 
 .line {
@@ -120,12 +124,16 @@
   background-color: var(--no-hover-dark);
 }
 
+.dark .main-logo {
+  filter: invert(1);
+}
+
 .dark .logo {
-  background-color: var(--header-dark-bg);
+  /* background-color: var(--header-dark-bg); */
 }
 
 .dark .navigation {
-  background-color: var(--header-dark-bg);
+  /* background-color: var(--header-dark-bg); */
 }
 
 .dark .links a:hover,
@@ -141,5 +149,5 @@
 }
 
 .dark .theme-icon {
-  background-color: var(--header-dark-bg);
+  /* background-color: var(--header-dark-bg); */
 }

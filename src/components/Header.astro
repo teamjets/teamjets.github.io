@@ -3,13 +3,13 @@ import Navigation from "./Navigation.astro";
 
 import ThemeIcon from "./ThemeIcon.astro";
 
-// import { Image } from "astro:assets";
-import Logo from "../assets/logo.svg";
+import { Image } from "astro:assets";
+import Logo from "../assets/logo.png";
 ---
 
 <span class="logo">
   <a href="/" aria-label="Main logo of the website">
-    <Logo class="main-logo" />
+    <Image src={Logo} alt="jets logo" class="main-logo" />
   </a>
 </span>
 
